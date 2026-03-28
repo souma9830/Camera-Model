@@ -688,7 +688,7 @@
       try {
         // ⚠️  Do NOT set Content-Type manually — fetch auto-adds the correct
         //    multipart/form-data boundary when body is FormData.
-        const res = await fetch('https://green-coin-backend-1.onrender.com/api/iot/deposit/complete', {
+        const res = await fetch('http://localhost:3000/api/iot/deposit/complete', {
           method: 'POST',
           body: formData,
         });
